@@ -19,6 +19,13 @@ public class Magpie3
 	{
 		return "Hello, let's talk.";
 	}
+	/** 
+	 * @ param dud
+	 * 
+	 **/
+	public void doNothing (int dud) {
+		
+	}
 
 	/**
 	 * Gives a response to a user statement
@@ -74,8 +81,7 @@ public class Magpie3
 		String phrase = statement.trim();
 		// The only change to incorporate the startPos is in
 		// the line below
-		int psn = phrase.toLowerCase().indexOf(
-				goal.toLowerCase(), startPos);
+		int psn = phrase.toLowerCase().indexOf(goal.toLowerCase(),startPos);
 
 		// Refinement--make sure the goal isn't part of a
 		// word
